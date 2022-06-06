@@ -47,7 +47,7 @@ const HeroSection = () => {
         />
       </div>
       <Flex className="text" direction="column">
-        <Typography font="h2" forwardedAs="h2" align="center">
+        <Typography font="h2" as="h2" align="center">
           PETER ANDRE 30
         </Typography>
         <Typography

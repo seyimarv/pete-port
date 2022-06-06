@@ -123,7 +123,6 @@ const About = () => {
         flex={"1 1 0px"}
         className="first-section"
         direction={isMobile ? "column" : ""}
-        gap={isMobile ? "9.6rem" : ""}
       >
         <div className="image-container">
           <LeftImageWrapper>
@@ -139,9 +138,9 @@ const About = () => {
           <div>
             <Typography
               font="h3"
-              as="h2"
-              fontSize="4.8rem"
+              as="h3"
               align={isMobile ? "center" : "left"}
+              mt={isMobile ? "9.6rem" : ""}
             >
               PETER ANDRE
             </Typography>
@@ -170,15 +169,14 @@ const About = () => {
         flex={"1 1 0px"}
         className="second-section"
         direction={isMobile ? "column-reverse" : ""}
-        gap={isMobile ? "9.6rem" : ""}
       >
         <Flex>
           <div>
             <Typography
               font="h3"
-              as="h2"
-              fontSize="4.8rem"
+              as="h3"
               align={isMobile ? "center" : "left"}
+              mt={isMobile ? "9.6rem" : ""}
             >
               30 YEARS
             </Typography>
