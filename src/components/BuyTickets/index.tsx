@@ -29,8 +29,8 @@ const EventsWrapper = styled.div`
   padding-bottom: 10.5rem;
 
   ${mediaQueries.tabport} {
-      margin: 0rem 5rem;
-      margin-top: 20rem;
+    margin: 0rem 5rem;
+    margin-top: 20rem;
   }
 
   ${mediaQueries.phone} {
@@ -72,24 +72,24 @@ const Wrapper = styled.div`
     transform: translateX(-10.74%, -62%);
   }
   ${mediaQueries.tabport} {
-      height: 50rem;
+    height: 50rem;
   }
   ${mediaQueries.phone} {
-   height: 25.661rem;
-   margin-top: 11.6rem;
+    height: 25.661rem;
+    margin-top: 11.6rem;
   }
 `;
 
 const TitleText = styled(Text)`
-${mediaQueries.tabport} {
-  font-size: 4rem;
-  line-height: 9rem;
-}
-${mediaQueries.phone} {
-  font-size: 2rem;
-  line-height: 7.5rem;
-}
-`
+  ${mediaQueries.tabport} {
+    font-size: 4rem;
+    line-height: 9rem;
+  }
+  ${mediaQueries.phone} {
+    font-size: 2rem;
+    line-height: 7.5rem;
+  }
+`;
 const Button = styled(BaseButton)`
   margin-top: 9.9rem;
   ${mediaQueries.phone} {
@@ -105,15 +105,14 @@ const BuyTicket = () => {
     <div id="buyticket">
       <EventsWrapper>
         <Flex direction="column">
-          <TitleText
-            font="h1"
-            as="h1"
-            transform="uppercase"
-            align="center"
-          >
+          <TitleText font="h1" as="h1" transform="uppercase" align="center">
             live events
           </TitleText>
-          <Text mt={isMobile ? "1.2rem" : "4.7rem"} font="smallText">
+          <Text
+            mt={isMobile ? "1.2rem" : "4.7rem"}
+            font="smallText"
+            align="center"
+          >
             PETERANDRE30.com
           </Text>
           <Text
