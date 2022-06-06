@@ -22,12 +22,17 @@ const Footer = styled(Flex)`
     }
 
 }
+
+.footer-icons-wrapper {
+    >:not(:first-child) {
+        margin-left: 1.6rem;
+        ${mediaQueries.phone} {
+            margin-left: .48rem;
+          }
+    }
+}
   ${mediaQueries.phone} {
     margin: 0rem 3.3rem;
-
-    .footer-icons-wrapper {
-        gap: .48rem;
-    }
     svg {
         width: .7rem;
         height: auto;
@@ -86,7 +91,7 @@ const Contact = () => {
           Site by Mojo. All rights reserved.
         </Text>
         <div>
-          <Flex gap="1.6rem" className="footer-icons-wrapper">
+          <Flex className="footer-icons-wrapper">
             <MusicIcon />
             <InstagramIcon />
             <TwitterIcon />

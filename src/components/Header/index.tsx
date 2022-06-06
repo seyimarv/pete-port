@@ -8,6 +8,7 @@ import { devices, mediaQueries } from "../../themes/mediaQueries";
 import MobileLogo from "../../assets/MobileLogo.png";
 import useMediaQuery from "hooks/useMediaQuery";
 import Link from "next/link";
+
 const LogoContainer = styled.div`
   position: relative;
   overflow: hidden;
@@ -94,7 +95,7 @@ const MobileDropdown = styled(Flex)<{ isDropdownOpen?: boolean }>`
   z-index: 999;
   padding: 8rem 5rem;
   align-items: flex-start;
-  gap: 6rem;
+
   transition: all 1s;
   transform: translateY(-100rem);
   visibility: hidden;
@@ -102,6 +103,11 @@ const MobileDropdown = styled(Flex)<{ isDropdownOpen?: boolean }>`
     isDropdownOpen ? "translateY(0rem)" : ""};
   visibility: ${({ isDropdownOpen }) =>
     isDropdownOpen ? "visible" : "hidden"};
+
+    >:not(:first-child) {
+      margin-top: 6rem;
+  }
+  
 `;
 
 const Header = () => {
