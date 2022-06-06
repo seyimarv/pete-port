@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import HeroSectionImage from "../../assets/PeterAndre_Hero_Image_2 3.png";
 import Image from "next/image";
-import Typography from "../../typography";
+import Typography from "../../utils/typography";
 import Flex from "../Flex";
 import { Button } from "../Button";
-import { devices, mediaQueries } from "../../themes/mediaQueries";
+import { devices, mediaQueries } from "../../utils/themes/mediaQueries";
 import useMediaQuery from "hooks/useMediaQuery";
 
 const Wrapper = styled.div`

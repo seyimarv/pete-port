@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Banner from "./Banner";
-import Text from "../../typography/index";
+import Text from "../../utils/typography/index";
 import Flex from "../Flex";
-import { devices, mediaQueries } from "@themes/mediaQueries";
+import { devices, mediaQueries } from "utils/themes/mediaQueries";
 import useMediaQuery from "hooks/useMediaQuery";
 const Questions = [
   {

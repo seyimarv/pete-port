@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
-import ArticulatCF500 from "../src/PeterAndre_Fonts (1)/Articulat.CF/ArticulatCF-Medium.otf"
-import ArticulatCF400 from "../src/PeterAndre_Fonts (1)/Articulat.CF/ArticulatCF-Normal.otf"
-import BoldArticulatCF from "../src/PeterAndre_Fonts (1)/Articulat.CF/ArticulatCF-Bold.otf";
-import BoldRocGrotesk from "../src/PeterAndre_Fonts (1)/Roc Grotesk/RocGrotesk_30.otf"
-import  MediumRocGrotesk from "../src/PeterAndre_Fonts (1)/Roc Grotesk/RocGrotesk_37.otf"
-import  NormalRocGrotesk from "../src/PeterAndre_Fonts (1)/Roc Grotesk/RocGrotesk_23.otf"
-import { devices } from "@themes/mediaQueries";
+import ArticulatCF500 from "../src/Fonts/PeterAndre_Fonts/Articulat.CF/ArticulatCF-Medium.otf"
+import ArticulatCF400 from "../src/Fonts/PeterAndre_Fonts/Articulat.CF/ArticulatCF-Normal.otf"
+import BoldArticulatCF from "../src/Fonts/PeterAndre_Fonts/Articulat.CF/ArticulatCF-Bold.otf";
+import BoldRocGrotesk from "../src/Fonts/PeterAndre_Fonts/Roc Grotesk/RocGrotesk_30.otf"
+import  MediumRocGrotesk from "../src/Fonts/PeterAndre_Fonts/Roc Grotesk/RocGrotesk_37.otf"
+import  NormalRocGrotesk from "../src/Fonts/PeterAndre_Fonts/Roc Grotesk/RocGrotesk_23.otf"
+import { devices } from "utils/themes/mediaQueries";
 
 export default createGlobalStyle`
 @font-face {

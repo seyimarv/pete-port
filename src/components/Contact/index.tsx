@@ -1,6 +1,6 @@
 import React from "react";
 import Flex from "../Flex";
-import Text from "../../typography/index";
+import Text from "../../utils/typography/index";
 import styled from "styled-components";
 import FooterLogo from "../../assets/FooterLogo.png";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import TelegramIcon from "assets/icons/Telegram";
 import InstagramIcon from "assets/icons/instagramIcon";
 import MusicIcon from "assets/icons/MusicIcon";
 import TwitterIcon from "assets/icons/TwitterIcon";
-import { mediaQueries } from "@themes/mediaQueries";
+import { mediaQueries } from "utils/themes/mediaQueries";
 
 const Footer = styled(Flex)`
   border-top: 0.5px solid #ffffff;

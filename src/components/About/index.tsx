@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Typography from "../../typography";
+import Typography from "../../utils/typography";
 import Flex from "../Flex";
 import Image from "next/image";
 import PeterFirstImage from "../../assets/PeterFirstPicture.png";
 import PeterFirstImageBg from "../../assets/FirstPicturebg.png";
 import PeterAndreImag2 from "../../assets/PeterAndreImage2.png";
 import SecondAboutImageBg from "../../assets/SecondAboutImage-bg.png";
-import { devices, mediaQueries } from "../../themes/mediaQueries";
+import { devices, mediaQueries } from "../../utils/themes/mediaQueries";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Wrapper = styled.div`

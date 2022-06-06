@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React, { useCallback, useState } from "react";
-import Typography from "@typography/index";
+import Typography from "utils/typography/index";
 import Flex from "../Flex";
 import logo2 from "../../assets/logo2.png";
 import styled from "styled-components";
-import { devices, mediaQueries } from "../../themes/mediaQueries";
+import { devices, mediaQueries } from "../../utils/themes/mediaQueries";
 import MobileLogo from "../../assets/MobileLogo.png";
 import useMediaQuery from "hooks/useMediaQuery";
 import Link from "next/link";

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { mediaQueries } from "../../themes/mediaQueries";
+import { mediaQueries } from "../../utils/themes/mediaQueries";
 
 export const Button = styled.button<{height?: string; width?:string;}>`
   font-size: 1.9rem;

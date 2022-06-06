@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "../../typography";
+import Text from "../../utils/typography";
 import { Button as BaseButton } from "../Button";
 import Flex from "../Flex";
 import PeterThirdImage from "../../assets/PeterBehindCloseDoors.png";
 import BuyTicketLines from "../../assets/BuyTicketLines.png";
 import Image from "next/image";
-import { devices, mediaQueries } from "../../themes/mediaQueries";
+import { devices, mediaQueries } from "../../utils/themes/mediaQueries";
 import Logo from "../../assets/BuyTicketLogo.png";
 import useMediaQuery from "hooks/useMediaQuery";
 

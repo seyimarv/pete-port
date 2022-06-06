@@ -1,5 +1,5 @@
 
-import { theme } from '@themes/theme';
+import { theme } from 'utils/themes/theme';
 import type { NextPage } from 'next';
 import About from '../components/About';
 import BuyTicket from '../components/BuyTickets';

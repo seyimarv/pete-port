@@ -1,9 +1,9 @@
-import { mediaQueries } from "@themes/mediaQueries";
+import { mediaQueries } from "utils/themes/mediaQueries";
 import ArrowDownIcon from "assets/icons/ArrowDownIcon";
 import ArrowUpIcon from "assets/icons/ArrowUp";
 import React, { useState } from "react";
 import styled from "styled-components";
-import Text from "../../typography";
+import Text from "../../utils/typography";
 import Flex from "../Flex";
 
 const Entity = styled(Flex)<{ open?: boolean }>`
