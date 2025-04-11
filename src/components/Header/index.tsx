@@ -12,8 +12,12 @@ import Link from "next/link";
 const LogoContainer = styled.div`
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30rem;
   height: 19.2rem;
+  
 
   ${mediaQueries.tabport} {
     width: 12rem;
@@ -23,6 +27,7 @@ const LogoContainer = styled.div`
 
 const MainNav = styled(Flex)`
   padding: 0rem 7rem;
+  align-items: center;
 
   a {
     cursor: pointer;
@@ -65,7 +70,7 @@ const ToggleIcon = styled.div<{ isDropdownOpen?: boolean }>`
   }
   & {
     background: ${({ isDropdownOpen }) =>
-      isDropdownOpen ? "transparent" : ""};
+    isDropdownOpen ? "transparent" : ""};
   }
   &::before,
   &::after {
@@ -77,16 +82,16 @@ const ToggleIcon = styled.div<{ isDropdownOpen?: boolean }>`
   &::before {
     top: ${({ isDropdownOpen }) => (isDropdownOpen ? "0" : "-1rem")};
     transform: ${({ isDropdownOpen }) =>
-      isDropdownOpen ? "rotate(135deg)" : ""};
+    isDropdownOpen ? "rotate(135deg)" : ""};
   }
   &::after {
     top: ${({ isDropdownOpen }) => (isDropdownOpen ? "0" : "1rem")};
     transform: ${({ isDropdownOpen }) =>
-      isDropdownOpen ? "rotate(-135deg)" : ""};
+    isDropdownOpen ? "rotate(-135deg)" : ""};
   }
 `;
 
-const MobileDropdown = styled(Flex)<{ isDropdownOpen?: boolean }>`
+const MobileDropdown = styled(Flex) <{ isDropdownOpen?: boolean }>`
   position: absolute;
   top: 0px;
   width: 100vw;
@@ -135,7 +140,7 @@ const Header = () => {
           </Typography>
         </Link>
         <LogoContainer>
-          <Image src={logo2} alt="Logo" />
+          <Image src={MobileLogo} alt="Logo" layout="fill" objectFit="contain" />
         </LogoContainer>
         <Link href="#buyticket">
           <Typography font="linkText" as="a" transform="uppercase">

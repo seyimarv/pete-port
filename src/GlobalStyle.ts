@@ -54,9 +54,13 @@ export default createGlobalStyle`
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%; 
+    font-size: calc(100vw / 3000 * 10); 
     background: #000000;
-  
+
+    
+   @media ${devices.bigdesktop} { 
+        font-size: 62.5%; 
+    }
 
     @media ${devices.tabland} { 
         font-size: 50%; 
